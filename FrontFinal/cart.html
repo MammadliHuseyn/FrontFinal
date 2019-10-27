@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.webp" type="image/gif/webp" sizes="16x16">
+    <title>Cart</title>
+</head>
+
+<body class="animated fadeInRight delay-0s">
+    <header>
+        <div class="container-fluid topheader">
+
+            <div class="row topheader">
+                <div class="col-4 topbar-social">
+                    <ul>
+                        <li><a href="cart.html" class="topbar-social-item fa fa-facebook"></a></li>
+                        <li><a href="#" class="topbar-social-item fa fa-instagram"></a></li>
+                        <li><a href="#" class="topbar-social-item fa fa-pinterest-p"></a></li>
+                        <li><a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a></li>
+                        <li><a href="#" class="topbar-social-item fa fa-youtube-play"></a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <span>Free shipping for standard order over $100</span>
+                </div>
+                <div class="col-4">
+                    <div>
+                        <span>fashe@example.com</span>
+                        <select name="" id="">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row header mb-3">
+                <div class="col-2 col-md-1 col-lg-2">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="col-8 col-md-10 col-lg-8">
+                    <nav>
+                        <ul>
+                            <li class="homepage"><a href="#">Home</a>
+                                <ul class=" home-extra">
+                                    <li><a href="#">Homepage V1 </a></li>
+                                    <li><a href="#">Homepage V2 </a></li>
+                                    <li><a href="#">Homepage V3 </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#" class="sale">Sale</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-2 col-md-1 col-lg-2">
+                    <a href="#"><img src="images/icon-header-01.png" alt=""></a>
+                    <span class="line"></span>
+                    <a href="#"><img src="images/icon-header-02.png" alt=""></a>
+                    <span class="header-icons-noti"></span>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <section class="cart">
+        <div class="row">
+            <div class="">
+                <img src="images/heading-pages-01.jpg" alt="">
+                <h1>CART</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="table-active" colspan="2">Product</th>
+                        <th scope="col" class="table-active">Price</th>
+                        <th scope="col" class="table-active">Quantity</th>
+                        <th scope="col" class="table-active">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tdSmall">
+                            <img src="images/item-10.jpg" alt="">
+                        </td>
+                        <td>Women Tshirt</td>
+                        <td>$36.00</td>
+                        <td><button class="btn btn-success btn-decrease" id='btn-decrease1'>-</button>
+                            <input type="number" value="1" max="100" min="0" id="input1" class="form-control">
+                            <button class="btn btn-success btn-increase" id="btn-increase1">+</button>
+                        </td>
+                        <td id="total1">36.00</td>
+                    </tr>
+                    <tr>
+                        <td class="tdSmall"><img src="images/item-05.jpg" alt=""></td>
+                        <td>Mug Adventure</td>
+                        <td>$16.00</td>
+                        <td>
+                            <button class="btn btn-success btn-decrease" id="btn-decrease2">-</button>
+                            <input type="number" value="1" max="100" min="0" class="form-control" id="input2">
+                            <button class="btn btn-success btn-increase" id="btn-increase2">+</button>
+                        </td>
+                        <td id="total2">16.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid mt-5 pt-5">
+            <div class="wrap">
+                <div class="row">
+                    <div class="col-4">
+                        <h5>Get in Touch</h5>
+                        <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call
+                            us on
+                            (+1) 96 716 6879</p>
+                        <div class="col-4 topbar-social">
+                            <a href="#" class="topbar-social-item fa fa-facebook"></a>
+                            <a href="#" class="topbar-social-item fa fa-instagram"></a>
+                            <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
+                            <a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
+                            <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <ul>
+                                    <h5>Categories</h5>
+                                    <li> <a href="#">Men</a></li>
+                                    <li> <a href="#">Women</a></li>
+                                    <li> <a href="#">Dresses</a></li>
+                                    <li> <a href="#">Sunglasses</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul>
+                                    <h5>Links</h5>
+                                    <li> <a href="#">Search</a></li>
+                                    <li> <a href="#">About Us</a></li>
+                                    <li> <a href="#">Contact Us</a></li>
+                                    <li> <a href="#">Returns</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul>
+                                    <h5>Help</h5>
+                                    <li> <a href="#">Track Order</a></li>
+                                    <li> <a href="#">Returns</a></li>
+                                    <li> <a href="#">Shipping</a></li>
+                                    <li> <a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h5>NewSletter</h5>
+                        <input type="email" placeholder="email@example.com" class="form-control">
+                        <button class="btn btn-dark">Subscribe</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 footer-end mt-5">
+                        <img src="images/paypal.png" alt="">
+                        <img src="images/visa.png" alt="">
+                        <img src="images/mastercard.png" alt="">
+                        <img src="images/express.png" alt="">
+                        <img src="images/discover.png" alt="">
+                        <p>Copyright © 2017 Colorlib. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#btn-decrease1").click(function () {
+                let num = parseInt($("#input1").val());
+                if (num != 0) {
+                    num--;
+                }
+                $("#input1").val(num);
+                let total = parseInt($("#total1").text());
+                total -= 36;
+                $("#total1").text($("#input1").val() * 36 + ".00");
+                console.log(total)
+            })
+            $("#btn-increase1").click(function () {
+                let num = parseInt($("#input1").val());
+                num++;
+                $("#input1").val(num);
+                let total = parseInt($("#total1").text());
+                total += 36;
+                $("#total1").text($("#input1").val() * 36 + ".00");
+                console.log(total)
+            })
+            $("#btn-decrease2").click(function () {
+                let num = parseInt($("#input2").val());
+                if (num != 0) {
+                    num--;
+                }
+                $("#input2").val(num);
+                let total = parseInt($("#total2").text());
+                total -= 16;
+                $("#total2").text($("#input2").val() * 16 + ".00");
+                console.log(total)
+            })
+            $("#btn-increase2").click(function () {
+                let num = parseInt($("#input2").val());
+                num++;
+                $("#input2").val(num);
+                let total = parseInt($("#total2").text());
+                total += 16;
+                $("#total2").text($("#input2").val() * 16 + ".00");
+                console.log(total)
+            })
+
+        })
+    </script>
+</body>
+
+</html>

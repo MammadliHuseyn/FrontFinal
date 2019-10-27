@@ -32,14 +32,14 @@
     <title>Home</title>
 </head>
 
-<body>
+<body class="animated fadeIn delay-0s">
     <header>
         <div class="container-fluid topheader">
 
             <div class="row topheader">
                 <div class="col-4 topbar-social">
                     <ul>
-                        <li><a href="#" class="topbar-social-item fa fa-facebook"></a></li>
+                        <li><a href="cart.html" class="topbar-social-item fa fa-facebook"></a></li>
                         <li><a href="#" class="topbar-social-item fa fa-instagram"></a></li>
                         <li><a href="#" class="topbar-social-item fa fa-pinterest-p"></a></li>
                         <li><a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a></li>
@@ -68,8 +68,8 @@
                 <div class="col-8 col-md-10 col-lg-8">
                     <nav>
                         <ul>
-                            <li class="homepage"><a href="#">Home</a>
-                                <ul class=" home-extra">
+                            <li class="homepage"><a href="">Home</a>
+                                <ul class=" home-extra ">
                                     <li><a href="#">Homepage V1 </a></li>
                                     <li><a href="#">Homepage V2 </a></li>
                                     <li><a href="#">Homepage V3 </a></li>
@@ -85,14 +85,45 @@
                     </nav>
                 </div>
                 <div class="col-2 col-md-1 col-lg-2">
-                    <a href="#"><img src="images/icon-header-01.png" alt=""></a>
+                    <a><img src="images/icon-header-01.png" alt="" style="cursor: pointer;"></a>
                     <span class="line"></span>
-                    <a href="#"><img src="images/icon-header-02.png" alt=""></a>
+                    <a id="bucket-icon"><img src="images/icon-header-02.png" alt=""  style="cursor: pointer;"></a>
+                    <!-- hamburger menu uchun -->
                     <span class="header-icons-noti"></span>
                 </div>
+
             </div>
+            <div class="row shop-bucket" id="bucket-menu">
+
+                <div class="col-12">
+                    <img src="images/item-cart-01.jpg" alt="">
+                    <a href="#">White Shirt With Pleat Detail back</a>
+                </div>
+                <div class="col-12">
+                    <img src="images/item-cart-02.jpg" alt="">
+                    <a href="#">Converse All Star Hi Black Canvas</a>
+                </div>
+                <div class="col-12">
+                    <img src="images/item-cart-03.jpg" alt="">
+                    <a href="#">Nixon Porter Leather Watch In Tan</a>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-dark" id="view-cart">
+                                view cart
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-dark">
+                                check out
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
 
+            </div>
         </div>
     </header>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="7000">
@@ -357,65 +388,69 @@
     <footer>
         <div class="container-fluid mt-5 pt-5">
             <div class="wrap">
-                    <div class="row">
-                            <div class="col-4">
-                                <h5>Get in Touch</h5>
-                                <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
-                                    (+1) 96 716 6879</p>
-                                <div class="col-4 topbar-social">
-                                        <a href="#" class="topbar-social-item fa fa-facebook"></a>
-                                        <a href="#" class="topbar-social-item fa fa-instagram"></a>
-                                        <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-                                        <a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-                                        <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <ul><h5>Categories</h5>
-                                            <li> <a href="#">Men</a></li>
-                                            <li> <a href="#">Women</a></li>
-                                            <li> <a href="#">Dresses</a></li>
-                                            <li> <a href="#">Sunglasses</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-4">
-                                            <ul><h5>Links</h5>
-                                                <li> <a href="#">Search</a></li>
-                                                <li> <a href="#">About Us</a></li>
-                                                <li> <a href="#">Contact Us</a></li>
-                                                <li> <a href="#">Returns</a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="col-4">
-                                            <ul><h5>Help</h5>
-                                                <li> <a href="#">Track Order</a></li>
-                                                <li> <a href="#">Returns</a></li>
-                                                <li> <a href="#">Shipping</a></li>
-                                                <li> <a href="#">FAQs</a></li>
-                                            </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <h5>NewSletter</h5>
-                                <input type="email" placeholder="email@example.com" class="form-control">
-                                <button class="btn btn-dark">Subscribe</button>
-                            </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h5>Get in Touch</h5>
+                        <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call
+                            us on
+                            (+1) 96 716 6879</p>
+                        <div class="col-4 topbar-social">
+                            <a href="#" class="topbar-social-item fa fa-facebook"></a>
+                            <a href="#" class="topbar-social-item fa fa-instagram"></a>
+                            <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
+                            <a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
+                            <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
                         </div>
+                    </div>
+                    <div class="col-4">
                         <div class="row">
-                            <div class="col-12 footer-end mt-5">
-                                <img src="images/paypal.png" alt="">
-                                <img src="images/visa.png" alt="">
-                                <img src="images/mastercard.png" alt="">
-                                <img src="images/express.png" alt="">
-                                <img src="images/discover.png" alt="">
-                                <p>Copyright © 2017 Colorlib. All rights reserved.</p>
+                            <div class="col-4">
+                                <ul>
+                                    <h5>Categories</h5>
+                                    <li> <a href="#">Men</a></li>
+                                    <li> <a href="#">Women</a></li>
+                                    <li> <a href="#">Dresses</a></li>
+                                    <li> <a href="#">Sunglasses</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul>
+                                    <h5>Links</h5>
+                                    <li> <a href="#">Search</a></li>
+                                    <li> <a href="#">About Us</a></li>
+                                    <li> <a href="#">Contact Us</a></li>
+                                    <li> <a href="#">Returns</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <ul>
+                                    <h5>Help</h5>
+                                    <li> <a href="#">Track Order</a></li>
+                                    <li> <a href="#">Returns</a></li>
+                                    <li> <a href="#">Shipping</a></li>
+                                    <li> <a href="#">FAQs</a></li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-4">
+                        <h5>NewSletter</h5>
+                        <input type="email" placeholder="email@example.com" class="form-control">
+                        <button class="btn btn-dark">Subscribe</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 footer-end mt-5">
+                        <img src="images/paypal.png" alt="">
+                        <img src="images/visa.png" alt="">
+                        <img src="images/mastercard.png" alt="">
+                        <img src="images/express.png" alt="">
+                        <img src="images/discover.png" alt="">
+                        <p>Copyright © 2017 Colorlib. All rights reserved.</p>
+                    </div>
+                </div>
             </div>
-            
+
         </div>
     </footer>
 
@@ -494,6 +529,18 @@
                 document.getElementById("countdown").innerHTML = "EXPIRED";
             }
         }, 1000);
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#view-cart").click(function(){
+                window.location.replace("cart.html");
+                })
+            $("#bucket-icon").click(function(){
+              let menu =  $("#bucket-menu");
+              menu.toggleClass("d-block");
+
+            })
+        })
     </script>
 </body>
 
