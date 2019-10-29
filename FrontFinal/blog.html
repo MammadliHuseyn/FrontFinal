@@ -15,11 +15,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="icon" href="images/favicon.webp" type="image/gif/webp" sizes="16x16">
-    <title>Cart</title>
+        <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <title>Blog</title>
 </head>
 
-<body class="animated fadeInRight delay-0s">
+<body class="animated fadeInDown delay-0s">
     <header>
         <div class="container-fluid topheader">
 
@@ -81,19 +81,17 @@
 
             </div>
             <div class="row shop-bucket animated fadeInDown delay-0s" id="bucket-menu">
+                <div id="bucket">
+                    <div class="col-12">
+                        <span>
+                            Total:
+                        </span>
+                        <span id=" ">
+                            0.00
+                        </span>
+                    </div>
+                </div>
 
-                <div class="col-12">
-                    <img src="images/item-cart-01.jpg" alt="">
-                    <a href="#">White Shirt With Pleat Detail back</a>
-                </div>
-                <div class="col-12">
-                    <img src="images/item-cart-02.jpg" alt="">
-                    <a href="#">Converse All Star Hi Black Canvas</a>
-                </div>
-                <div class="col-12">
-                    <img src="images/item-cart-03.jpg" alt="">
-                    <a href="#">Nixon Porter Leather Watch In Tan</a>
-                </div>
                 <div class="col-12">
                     <div class="row">
                         <div class="col-6">
@@ -107,118 +105,23 @@
                             </button>
                         </div>
                     </div>
-                </div>
-
-
+                </div>  
             </div>
         </div>
     </header>
-    <section class="cart">
+
+    <section class="cart blog">
         <div class="row">
             <div class="">
-                <img src="images/heading-pages-01.jpg" alt="">
-                <h1>CART</h1>
+                <img src="images/heading-pages-05.jpg" alt="">
+                <h1>BLOG</h1>
             </div>
         </div>
     </section>
-    <section>
-        <div class="container mt-5">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col" class="table-active" colspan="2">Product</th>
-                        <th scope="col" class="table-active">Price</th>
-                        <th scope="col" class="table-active">Quantity</th>
-                        <th scope="col" class="table-active">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tdSmall">
-                            <img src="images/item-10.jpg" alt="">
-                        </td>
-                        <td>Women Tshirt</td>
-                        <td>$36.00</td>
-                        <td><button class="btn btn-dark btn-decrease" id='btn-decrease1'>-</button>
-                            <input type="number" value="1" max="100" min="1" id="input1" class="form-control">
-                            <button class="btn btn-dark btn-increase" id="btn-increase1">+</button>
-                        </td>
-                        <td id="total1">36.00</td>
-                    </tr>
-                    <tr>
-                        <td class="tdSmall"><img src="images/item-05.jpg" alt=""></td>
-                        <td>Mug Adventure</td>
-                        <td>$16.00</td>
-                        <td>
-                            <button class="btn btn-dark btn-decrease" id="btn-decrease2">-</button>
-                            <input type="number" value="1" max="100" min="1" class="form-control" id="input2">
-                            <button class="btn btn-dark btn-increase" id="btn-increase2">+</button>
-                        </td>
-                        <td id="total2">16.00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" placeholder="Coupon Code" class="form-control" id="couponCode">
-                            </div>
-                            <div class="col-6">
-                                <button class="btn btn-dark" id="couponBtn">APPLY COUPON</button>
-                            </div>
-                        </div>
+    
 
-                    </div>
-                    <div class="col-6 updateCart">
-                        <button class="btn btn-dark ">UPDATE CART</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class='cartTotals'>
-        <div class="container mt-5">
-            <div class="row ">
-                <div class="col-lg-12">
-                    <form action="">
-                        <h4>CART TOTALS</h4>
-                        <div>
-                            <span>Subtotal: </span>
-                            <span>$39.00</span>
-                        </div>
-                        <div>
-                            <span>Shipping: </span>
-                            <span> There are no shipping methods available. Please double check your address, or contact
-                                us
-                                if you need any help</span>
-                        </div>
-                        <div>
-                            <span>CALCULATE SHIPPING</span>
-                            <select name="country" id="" class="form-control w-50 mt-3">
-                                <option value="Select a country...">Select a country...</option>
-                                <option value="UK">UK</option>
-                                <option value="US">US</option>
-                                <option value="Japan">Japan</option>
-                            </select>
-                            <input type="text" placeholder="state / country" class="form-control w-50 mt-3 mb-3">
-                            <input type="text" placeholder="Postcode / Zip" class="form-control w-50 mt-3 mb-3">
-                            <button class="btn btn-dark w-100">UPDATE TOTALS</button>
-                        </div>
-                        <div class="mt-3">
-                            <span>Total: </span>
-                            <span>$39.00</span>
-                        </div>
-                        <div>
-                                <button class="btn btn-dark mt-3 w-100">Proceed to Checkout</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
+
+
     <footer>
         <div class="container-fluid mt-5 pt-5">
             <div class="wrap">
@@ -288,8 +191,7 @@
         </div>
     </footer>
 
-   <script src="js/main.js"></script>
-   <script src="js/coupon.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

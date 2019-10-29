@@ -71,14 +71,14 @@
                             <li class="homepage"><a href="index.html">Home</a>
                                 <ul class=" home-extra ">
                                     <li><a href="index.html">Homepage V1 </a></li>
-                                    <li><a href="#">Homepage V2 </a></li>
-                                    <li><a href="#">Homepage V3 </a></li>
+                                    <li><a href="index.html">Homepage V2 </a></li>
+                                    <li><a href="index.html">Homepage V3 </a></li>
                                 </ul>
                             </li>
                             <li><a href="product.html">Shop</a></li>
                             <li><a href="product.html" class="sale">Sale</a></li>
                             <li><a href="#">Features</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -458,148 +458,8 @@
 
 
 
-    <script>
-        $(document).ready(function () {
-            sweetalert();
-            $('.owl-carousel').owlCarousel({
-
-
-
-
-                dots: false,
-                loop: true,
-                margin: 30,
-                mouseDrag: true,
-                autoplay: true,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    600: {
-                        items: 3,
-                        nav: false
-                    },
-                    1000: {
-                        items: 4,
-                        nav: true,
-                        loop: true,
-                    }
-                }
-            })
-
-        })
-
-        let sweetalert = (function () {
-            for (let f in $('.addTocart')) {
-                $(".addTocart").click(function () {
-                    swal("Success", "item is added to cart !", "success");
-                })
-            }
-        })
-
-
-    </script>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 5, 2020 15:17:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
-    <script>
-        $(document).ready(function () {
-            $("#view-cart").click(function () {
-                window.location.replace("cart.html");
-            })
-            $("#bucket-icon").click(function () {
-                let menu = $("#bucket-menu");
-                menu.toggleClass("d-block");
-
-            })
-        })
-    </script>
-    <script>
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 5) {
-                $("#topheader").slideUp();
-
-            }
-            if ($(window).scrollTop() == 0 && $(window).width() >= 992) {
-                $("#topheader").slideDown();
-
-            }
-        })
-    </script>
-        <script>
-                $(document).ready(function () {
-                    $(".addTocart").click(function () {
-                        // window.location.replace("demo.html");
-                        // localStorage.clear();
-                        let itemPrice = $(this).next().next().text();
-                        let imgofproduct = $(this).prev().attr("src");
-                        let nameofproduct = $(this).next().text();
-                        localStorage.setItem("name_Of_Product", nameofproduct);
-                        localStorage.setItem("imgofProduct", imgofproduct);
-                        localStorage.setItem("itemPrice", itemPrice);
-                        console.log(localStorage);
-                        let imgof = localStorage.getItem("imgofProduct");
-                        let nameof = localStorage.getItem("name_Of_Product");
-                        let itemprice = localStorage.getItem('itemPrice');
-                        $('#item-name').text(nameof);
-                        $('#item-img').attr("src", imgof);
-        
-                        let bucket = document.getElementById("bucket");
-        
-                        let col = document.createElement('div');
-                        col.className = "col-12";
-                        bucket.appendChild(col);
-                        let img = document.createElement('img');
-                        img.setAttribute("src",imgof);
-                        let nameItem = document.createElement('a');
-                        nameItem.setAttribute('href','#')
-                        nameItem.classList="ml-3"
-                        col.appendChild(img);
-                        col.appendChild(nameItem);
-                        nameItem.innerText=nameof;
-                        let xBtn = document.createElement('button');
-                        xBtn.innerText="X";
-                        col.appendChild(xBtn);
-                        xBtn.classList="btn ml-3 text-right"
-                        xBtn.style.border="1px solid black"
-                        $(xBtn).click(function(){
-                           $(this).parent().remove();
-                        })
-                        swal(nameof, "is added to cart !", "success");
-                        $("#price").text(itemprice);
-        
-                    })
-                })
-            </script>
+<script src="js/main.js"></script>
+<script src="js/homepage.js"></script>
 </body>
 
 </html>

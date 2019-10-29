@@ -21,7 +21,7 @@
     <title>Product</title>
 </head>
 
-<body class="animated fadeInRight delay-0s">
+<body class="animated fadeIn delay-0s">
     <header>
         <div class="container-fluid topheader">
 
@@ -60,14 +60,14 @@
                             <li class="homepage"><a href="index.html">Home</a>
                                 <ul class=" home-extra ">
                                     <li><a href="index.html">Homepage V1 </a></li>
-                                    <li><a href="#">Homepage V2 </a></li>
-                                    <li><a href="#">Homepage V3 </a></li>
+                                    <li><a href="index.html">Homepage V2 </a></li>
+                                    <li><a href="index.html">Homepage V3 </a></li>
                                 </ul>
                             </li>
                             <li><a href="product.html">Shop</a></li>
                             <li><a href="product.html" class="sale">Sale</a></li>
                             <li><a href="#">Features</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -253,7 +253,7 @@
                         <img src="images/item-01.jpg" alt="">
                         <button class="btn btn-secondary addTocart">ADD TO CART</button>
                         <p class="item-name mt-3"><a href="">Herschel supply co 25l</a></p>
-                        <p class="item-price">$165.90</p>
+                        <p class="item-price">$65.00</p>
                     </div>
                     <div class="col-lg-4">
                         <img src="images/item-14.jpg" alt="">
@@ -267,19 +267,19 @@
                         <img src="images/item-06.jpg" alt="">
                         <button class="btn btn-secondary addTocart">ADD TO CART</button>
                         <p class="item-name mt-3"><a href="">Coach slim easton black</a></p>
-                        <p class="item-price">$165.90</p>
+                        <p class="item-price">$55.90</p>
                     </div>
                     <div class="col-lg-4">
                         <img src="images/item-08.jpg" alt="">
                         <button class="btn btn-secondary addTocart">ADD TO CART</button>
                         <p class="item-name mt-3"><a href="">Coach slim easton black</a></p>
-                        <p class="item-price">$165.90</p>
+                        <p class="item-price">$89.90</p>
                     </div>
                     <div class="col-lg-4">
                         <img src="images/item-10.jpg" alt="">
                         <button class="btn btn-secondary addTocart">ADD TO CART</button>
-                        <p class="item-name mt-3"><a href="">Coach slim easton black</a></p>
-                        <p class="item-price">$165.90</p>
+                        <p class="item-name mt-3"><a href="">Denim Jacket Blue</a></p>
+                        <p class="item-price">$65.90</p>
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -287,19 +287,19 @@
                         <img src="images/item-11.jpg" alt="">
                         <button class="btn btn-secondary addTocart">ADD TO CART</button>
                         <p class="item-name mt-3"><a href="">Coach slim easton black</a></p>
-                        <p class="item-price">$165.90</p>
+                        <p class="item-price">$99.90</p>
                     </div>
                     <div class="col-lg-4">
                         <img src="images/item-12.jpg" alt="">
                         <button class="btn btn-secondary addTocart">ADD TO CART</button>
                         <p class="item-name mt-3"><a href="">Coach slim easton black</a></p>
-                        <p class="item-price">$165.90</p>
+                        <p class="item-price">$85.90</p>
                     </div>
                     <div class="col-lg-4">
                         <img src="images/item-15.jpg" alt="">
                         <button class="btn btn-secondary addTocart">ADD TO CART</button>
-                        <p class="item-name mt-3"><a href="">Coach slim easton blackerrew</a></p>
-                        <p class="item-price">$165.90</p>
+                        <p class="item-name mt-3"><a href="">Denim Jacket Blue</a></p>
+                        <p class="item-price">$65.90</p>
                     </div>
                     <div class="col-lg-12 " id="pagination">
 
@@ -385,86 +385,8 @@
     </footer>
 
 
-    <script>
-        $(document).ready(function () {
-            $("#view-cart").click(function () {
-                window.location.replace("cart.html");
-            })
-            $("#bucket-icon").click(function () {
-                let menu = $("#bucket-menu");
-                menu.toggleClass("d-block");
 
-            })
-        })
-    </script>
-    <script>
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 5) {
-                $("#topheader").slideUp();
-
-            }
-            if ($(window).scrollTop() == 0 && $(window).width() >= 992) {
-                $("#topheader").slideDown();
-
-            }
-        })
-    </script>
-    <script>
-        $('input[type="range"]').rangeslider();
-    </script>
-    <script>
-        $(".main-side img").hover(function () {
-            $(this).next().toggleClass("animated fadeInUp d-block");
-        })
-        $(".main-side img").mouseout(function () {
-            $(this).next().toggleClass("animated fadeOutDown d-block delay-1s");
-        })
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(".addTocart").click(function () {
-                // window.location.replace("demo.html");
-                // localStorage.clear();
-                let itemPrice = $(this).next().next().text();
-                let imgofproduct = $(this).prev().attr("src");
-                let nameofproduct = $(this).next().text();
-                localStorage.setItem("name_Of_Product", nameofproduct);
-                localStorage.setItem("imgofProduct", imgofproduct);
-                localStorage.setItem("itemPrice", itemPrice);
-                console.log(localStorage);
-                let imgof = localStorage.getItem("imgofProduct");
-                let nameof = localStorage.getItem("name_Of_Product");
-                let itemprice = localStorage.getItem('itemPrice');
-                $('#item-name').text(nameof);
-                $('#item-img').attr("src", imgof);
-
-                let bucket = document.getElementById("bucket");
-
-                let col = document.createElement('div');
-                col.className = "col-12";
-                bucket.appendChild(col);
-                let img = document.createElement('img');
-                img.setAttribute("src",imgof);
-                let nameItem = document.createElement('a');
-                nameItem.setAttribute('href','#')
-                nameItem.classList="ml-3"
-                col.appendChild(img);
-                col.appendChild(nameItem);
-                nameItem.innerText=nameof;
-                let xBtn = document.createElement('button');
-                xBtn.innerText="X";
-                col.appendChild(xBtn);
-                xBtn.classList="btn ml-3 text-right"
-                xBtn.style.border="1px solid black"
-                $(xBtn).click(function(){
-                   $(this).parent().remove();
-                })
-                swal(nameof, "is added to cart !", "success");
-                $("#price").text(itemprice);
-
-            })
-        })
-    </script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
