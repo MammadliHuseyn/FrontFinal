@@ -64,7 +64,7 @@ header .shop-bucket .col-12 .col-6 button {
 
 header .shop-bucket img {
   margin-bottom: 1em;
-  width: 30%;
+  width: 20%;
   display: inline-block;
 }
 
@@ -679,6 +679,13 @@ table td .btn-dark:hover {
   padding-left: 55%;
 }
 
+.left-side a:hover, .main-side a:hover {
+  color: red;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 .left-side .colors .col1 label {
   background-color: #00bbec;
 }
@@ -768,11 +775,12 @@ table td .btn-dark:hover {
   width: 100%;
 }
 
-.main-side .col-lg-4 .btn-danger {
+.main-side .col-lg-4 .btn-secondary {
+  border-radius: 2em;
   position: absolute;
   display: none;
   left: 25%;
-  bottom: 30%;
+  bottom: 35%;
 }
 
 /* Extra small devices (phones, 600px and down) */

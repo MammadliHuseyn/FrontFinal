@@ -31,8 +31,8 @@ header{
     z-index:2000;
     .shop-bucket{
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         display: none;
         background-color:white;
         position: absolute;
@@ -54,7 +54,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         z-index:1000;
         img{
             margin-bottom:1em;
-            width:30%;
+            width:20%;
             display: inline-block;
         }
         a{
@@ -591,6 +591,13 @@ table{
 
 //product page starts
 
+.left-side,.main-side{
+    a:hover{
+        color:red;
+        text-decoration: none;
+        transition: all 0.4s;
+    }
+}
 .left-side{
 
     .colors{
@@ -682,11 +689,12 @@ a{
             width:100%;
 
         }
-        .btn-danger{
+        .btn-secondary{
+            border-radius:2em;
             position: absolute;
             display:none;
             left:25%;
-            bottom:30%;
+            bottom:35%;
         }
     }
 }
