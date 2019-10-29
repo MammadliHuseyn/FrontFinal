@@ -1,13 +1,38 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
+    .btn-dark {
+        border:none;
+        font-size:1.1em;
+        padding-left:3em;
+        padding-right:3em;
+        padding-top:0.5em;
+        padding-bottom:.5em;
+        border-radius:2em;
+    }
+    .btn-dark:hover{
+        color:white;
+        border:none;
+        background-color:red;
+        transition: all 0.5s;
+    }
+    .btn-dark:active{
+        background-color:red!important;
+    }
 }
 ul{
     margin:0 !important;
     padding:0;
+    list-style-type: none;
 }
 header{
+    position: sticky;
+    top:0;
+    z-index:2000;
     .shop-bucket{
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         display: none;
         background-color:white;
         position: absolute;
@@ -71,6 +96,11 @@ header{
         }
         .homepage{
             position: relative;
+            &:hover{
+                transition: .2s !important;
+                cursor: pointer !important;
+                color: aqua !important;
+            }
         }
         .homepage:hover .home-extra{
             display:block;
@@ -114,7 +144,7 @@ header{
         }
         
     }
-    color:#888;
+    
     .container-fluid{
         .header{
             .bucket{
@@ -123,12 +153,17 @@ header{
             li{
                 padding-right:2em;
             }
+            .line{
+                width:1px;
+                height:1.6em;;
+                background-color:#e5e5e5;
+            }
             padding-top:1em;
             background: white;
-            .col-2,.col-8{
+            .col-lg-2,.col-lg-8{
                 img{
-                    padding-right:1em;
-                    padding-left:1em;
+                    padding-right:1.1em;
+                    padding-left:1.1em;
                 }
                 display:flex;
                 justify-content: center;
@@ -433,7 +468,7 @@ footer{
     .topbar-social a{
         padding-right:.3em;
     }
-    .col-12{
+    .col-lg-12{
         img{
             cursor: pointer;
         }
@@ -453,23 +488,7 @@ footer{
         font-weight: 300;
     }
     .btn-dark {
-        border:none;
-        font-size:1.1em;
-        padding-left:3em;
-        padding-right:3em;
-        padding-top:0.5em;
-        padding-bottom:.5em;
         margin-top:2em;
-        border-radius:2em;
-    }
-    .btn-dark:hover{
-        color:white;
-        border:none;
-        background-color:red;
-        transition: all 0.5s;
-    }
-    .btn-dark:active{
-        background-color:red!important;
     }
     h5{
         text-transform: uppercase;
@@ -504,6 +523,7 @@ ul{
 
 
 .cart{
+    position: relative;
     .row{
         margin-right:0;
         margin-left:0;
@@ -515,11 +535,19 @@ ul{
     }
     h1{
         position: absolute;
-        top:16%;
-        left:45%;
+        top:8%;
+        left:43%;
         font-size:4em;
         color:white;
         font-weight: 600;
+    }
+    h4{
+        position: absolute;
+        top:60%;
+        left:39%;
+        color:white;
+        text-align: center;
+        font-weight:300;
     }
 }
 table{
@@ -534,14 +562,134 @@ table{
     .tdSmall{
         width:20%;
     }
+    td{
+        .btn-dark{
+            padding:0;
+            padding-top:.3em;
+            padding-bottom:.3em;
+            padding-right:1em;
+            padding-left:1em;
+            border-radius:2px;
+        }
+        .btn-dark:hover{
+            background-color:#343A40;
+            transition: none;
+        }
+    }
+}
+.updateCart{
+    text-align:end;
+}
+.cartTotals{
+.container{
+    padding-left:55%;
+}
 }
 
 
 
 
+//product page starts
+
+.left-side{
+
+    .colors{
+        .col1{
+            label{
+                background-color:#00bbec;
+            }
+        }
+        .col2{
+            label{
+                background-color:#2c6ed5;
+            }
+        }
+        .col3{
+            label{
+                background-color:#ffa037;
+            }
+        }
+        .col4{
+            label{
+                background-color: #ff5337;
+            }
+        }
+        .col5{
+            label{
+                background-color: #a88c77;
+            }
+        }
+        .col6{
+            label{
+                background-color:#393939;
+            }
+        }
+        .col7{
+            label{
+                background-color:#ccc;
+            }
+        }
+        .col{
+            flex-grow:0;
+            padding-right: .19em;
+            text-align: center;
+        }
+        label{
+            cursor: pointer;
+            width:25px;
+            height:25px;
+            border-radius:50%;
+            margin:0;
+            padding:0;
+            border:none;
+            &:active{
+                border:2px black solid;
+            }
+        }
+    }
+    span{
+        font-weight:200;
+    }
+    .btn-dark{
+        width:37%;
+    }
+    .col-lg-12{
+padding:0;
+    }
+    #line{
+        width:10em;
+        height:2px;
+        background-color:#888;
+        margin-bottom:20px;
+    }
+    input[type="range"]{
+        width:76%;
+    }
+    h5{
+        font-weight: 700;
+    }
+a{
+
+    color:#888;
+}
+}
 
 
+.main-side{
+    .col-lg-4{
+        position: relative;
+        img{
+            width:100%;
 
+        }
+        .btn-danger{
+            position: absolute;
+            display:none;
+            left:25%;
+            bottom:30%;
+        }
+    }
+}
 
 
 
@@ -574,14 +722,25 @@ table{
     .container-fluid{
         .topheader{
          display: none;
-     } 
+     }
+     .header{
+         .col-8{
+            display: none!important;
+            text-align: center;
+         }
+         
+     }
      }
      .carousel{
          .slide-items{
              font-size:6px;
          }
      }
+
 }
+
+
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
