@@ -787,14 +787,47 @@ table td .btn-dark:hover {
   bottom: 35%;
 }
 
-.blogs .categories .line-long {
+.blogs .littlePrice {
+  color: #888;
+  font-weight: 300;
+}
+
+.blogs .col-lg-8 a {
+  font-size: 1.8em;
+}
+
+.blogs h5 {
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  font-size: 1.5em;
+}
+
+.blogs .Categories .border {
+  border: none !important;
+  border-top: 1px solid #e5e5e5 !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.blogs .Categories a {
+  font-size: 1em !important;
+  color: #888;
+}
+
+.blogs .Categories .line-long {
   width: 10em;
   height: 1px;
   background-color: #888;
 }
 
-.blogs .categories li {
+.blogs .Categories li {
   line-height: 2em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 2.5em;
+}
+
+.blogs .Categories .category {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .blogs button {
@@ -823,10 +856,6 @@ table td .btn-dark:hover {
 
 .blogs .col-lg-12 {
   margin-bottom: 4em;
-}
-
-.blogs .col-lg-12 a {
-  font-size: 1.8em;
 }
 
 .blogs .col-lg-12 img {
@@ -863,6 +892,72 @@ table td .btn-dark:hover {
   margin-right: .2em;
 }
 
+.col-lg-5 img:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.archive .text-right {
+  color: #888;
+}
+
+.archive .col-lg-12 {
+  margin-bottom: 1em;
+}
+
+.archive .col-lg-12 a {
+  font-weight: 350;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.archive .col-lg-12 a:hover {
+  color: red;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.tags a {
+  font-family: Montserrat-Regular;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.5;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin: 3px;
+  margin-top: 20px;
+}
+
+.about .col-lg-1 label {
+  margin-left: 1em;
+  width: 3px;
+  height: 8em;
+  background-color: #e6e6e6;
+}
+
+.about p {
+  color: #888;
+  font-weight: 350;
+  letter-spacing: .04em;
+}
+
+.about h3 {
+  font-weight: 350;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about .author {
+  color: #555;
+  font-weight: 350;
+  font-size: 1em;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -874,6 +969,9 @@ table td .btn-dark:hover {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+  .about .col-lg-1 label {
+    display: none;
+  }
   .container-fluid .topheader {
     display: none;
   }

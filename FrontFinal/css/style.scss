@@ -705,8 +705,33 @@ a{
     }
 }
 
+
 .blogs{
-    .categories{
+    .littlePrice{
+        color:#888;
+        font-weight: 300;
+    }
+    .col-lg-8{
+        a{
+            font-size:1.8em;
+        }
+    }
+    h5{
+        font-weight: 700;
+        margin-bottom:1.2em;
+        font-size:1.5em;
+    }
+    .Categories{
+        .border{
+            border:none!important;
+            border-top:1px solid #e5e5e5!important;
+            border-bottom:1px solid #e5e5e5!important;
+        }
+        a{
+            font-size:1em!important;
+            color:#888;
+
+        }
         .line-long{
             width:10em;
             height:1px;
@@ -714,6 +739,12 @@ a{
         }
         li{
             line-height:2em;
+            font-weight: 200;
+            letter-spacing: 1px;
+            line-height: 2.5em;
+        }
+        .category{
+            border-bottom: 1px solid #e5e5e5;
         }
     }
 
@@ -738,9 +769,6 @@ a{
     }
     .col-lg-12{
         margin-bottom:4em;
-        a{
-            font-size:1.8em;
-        }
         img{
             margin-bottom:1em;
         }
@@ -773,6 +801,70 @@ a{
     }
 }
 
+    .col-lg-5{
+        img:hover{
+            opacity: 0.8;
+            transition: all 0.6s;
+            cursor: pointer;
+        }
+    }
+    .archive{
+        .text-right{
+            color:#888;
+        }
+        .col-lg-12{
+            margin-bottom:1em;
+            a{
+                font-weight:350;
+                letter-spacing:1px;
+                color:#888;
+                &:hover{
+                    color:red;
+                    transition:all 1s;
+                }
+            }
+        }
+    }
+.tags a{
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.5;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 3px;
+    margin-top:20px;
+    
+}
+.about{
+    .col-lg-1{
+        label{
+        margin-left:1em;
+        width:3px;
+        height:8em;
+        background-color:#e6e6e6;
+        }
+    }
+    p{
+        color:#888;
+        font-weight:350;
+        letter-spacing:.04em;
+    }
+    h3{
+        font-weight:350;
+    }
+    img{
+        width:100%;
+    }
+    .author{
+        color:#555;
+        font-weight:350;
+        font-size:1em;
+    }
+}
+
+//-------------------------------MEDIA QUERY-----------------------------------------------------
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -800,6 +892,13 @@ a{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .about{
+        .col-lg-1{
+            label{
+                display:none;
+            }
+        }
+    }
     .container-fluid{
         .topheader{
          display: none;
