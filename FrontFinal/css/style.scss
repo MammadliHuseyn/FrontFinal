@@ -1,6 +1,9 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
+    // div:hover{
+    //     overflow: hidden;
+    // }
     .btn-dark {
         border:none;
         font-size:1.1em;
@@ -291,6 +294,9 @@ header{
 }
 
 .featured-products{
+    .item:hover{  
+            overflow:hidden; 
+    }
     text-align: center;
 
     h1{
@@ -699,6 +705,73 @@ a{
     }
 }
 
+.blogs{
+    .categories{
+        .line-long{
+            width:10em;
+            height:1px;
+            background-color:#888; 
+        }
+        li{
+            line-height:2em;
+        }
+    }
+
+    button{
+        border:none;
+        background:none;
+        outline: none;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            color:red;
+            transition: all 1s;
+        }
+        &:active{
+            outline: none;
+        }
+    }
+
+    img{
+        width:100%;
+    }
+    .col-lg-12{
+        margin-bottom:4em;
+        a{
+            font-size:1.8em;
+        }
+        img{
+            margin-bottom:1em;
+        }
+    }
+    a{
+        color:black;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+        color:red;
+        transition: all 1s;
+    }
+}
+.blog-details{
+    margin-left:.1em;
+
+    .blog-info{
+        color:#888;
+    }
+    .line{
+        width:1px;
+        height:.7em;
+        background: #888;
+        padding:0;
+        margin:0;
+        margin-left:.2em;
+        margin-right:.2em;
+        
+    }
+}
 
 
 /* Extra small devices (phones, 600px and down) */

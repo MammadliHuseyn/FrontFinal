@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $(".addTocart").click(function () {
+    $(".main-side .addTocart").click(function () {
         let itemPrice = $(this).next().next().text();
         let imgofproduct = $(this).prev().attr("src");
         let nameofproduct = $(this).next().text();
@@ -13,9 +13,7 @@ $(document).ready(function () {
         let itemprice = localStorage.getItem('itemPrice');
         $('#item-name').text(nameof);
         $('#item-img').attr("src", imgof);
-
         let bucket = document.getElementById("bucket");
-
         let col = document.createElement('div');
         col.className = "col-12";
         bucket.appendChild(col);
@@ -34,6 +32,46 @@ $(document).ready(function () {
         xBtn.style.border = "1px solid black"
         $(xBtn).click(function () {
             $(this).parent().remove();
+           localStorage.clear();
+        })
+        swal(nameof, "is added to cart !", "success");
+        $("#price").text(itemprice);
+
+    })
+})
+
+$(document).ready(function () {
+    $('.owl-carousel').on('click', '.item .addTocart', function () {
+        let itemPrice = $(this).next().next().text();
+        let imgofproduct = $(this).prev().attr("src");
+        let nameofproduct = $(this).next().text();
+        localStorage.setItem("name_Of_Product", nameofproduct);
+        localStorage.setItem("imgofProduct", imgofproduct);
+        localStorage.setItem("itemPrice", itemPrice);
+        console.log(localStorage);
+        let imgof = localStorage.getItem("imgofProduct");
+        let nameof = localStorage.getItem("name_Of_Product");
+        let itemprice = localStorage.getItem('itemPrice');
+        let bucket = document.getElementById("bucket");
+        let col = document.createElement('div');
+        col.className = "col-12";
+        bucket.appendChild(col);
+        let img = document.createElement('img');
+        img.setAttribute("src", imgof);
+        let nameItem = document.createElement('a');
+        nameItem.setAttribute('href', '#')
+        nameItem.classList = "ml-3"
+        col.appendChild(img);
+        col.appendChild(nameItem);
+        nameItem.innerText = nameof;
+        let xBtn = document.createElement('button');
+        xBtn.innerText = "X";
+        col.appendChild(xBtn);
+        xBtn.classList = "btn ml-3 text-right"
+        xBtn.style.border = "1px solid black"
+        $(xBtn).click(function () {
+            $(this).parent().remove();
+           localStorage.clear();
         })
         swal(nameof, "is added to cart !", "success");
         $("#price").text(itemprice);

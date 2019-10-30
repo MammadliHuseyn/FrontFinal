@@ -342,6 +342,10 @@ header .col-4 a {
   text-align: center;
 }
 
+.featured-products .item:hover {
+  overflow: hidden;
+}
+
 .featured-products h1 {
   margin-left: 33%;
 }
@@ -781,6 +785,82 @@ table td .btn-dark:hover {
   display: none;
   left: 25%;
   bottom: 35%;
+}
+
+.blogs .categories .line-long {
+  width: 10em;
+  height: 1px;
+  background-color: #888;
+}
+
+.blogs .categories li {
+  line-height: 2em;
+}
+
+.blogs button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.blogs button:focus {
+  outline: none;
+}
+
+.blogs button:hover {
+  color: red;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.blogs button:active {
+  outline: none;
+}
+
+.blogs img {
+  width: 100%;
+}
+
+.blogs .col-lg-12 {
+  margin-bottom: 4em;
+}
+
+.blogs .col-lg-12 a {
+  font-size: 1.8em;
+}
+
+.blogs .col-lg-12 img {
+  margin-bottom: 1em;
+}
+
+.blogs a {
+  color: black;
+  text-decoration: none;
+}
+
+.blogs a:hover {
+  text-decoration: none;
+  color: red;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.blog-details {
+  margin-left: .1em;
+}
+
+.blog-details .blog-info {
+  color: #888;
+}
+
+.blog-details .line {
+  width: 1px;
+  height: .7em;
+  background: #888;
+  padding: 0;
+  margin: 0;
+  margin-left: .2em;
+  margin-right: .2em;
 }
 
 /* Extra small devices (phones, 600px and down) */
