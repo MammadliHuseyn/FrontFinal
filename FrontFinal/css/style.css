@@ -958,6 +958,44 @@ table td .btn-dark:hover {
   font-size: 1em;
 }
 
+.sendMessage input[type="submit"] {
+  margin-top: 2em;
+}
+
+.sendMessage h3 {
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
+.sendMessage .form-control {
+  width: 100% !important;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.sendMessage .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navigation {
+  margin-top: 2%;
+  margin-left: 2.7%;
+}
+
+.navigation a {
+  font-size: .9em;
+  color: #555;
+}
+
+.navigation a:hover {
+  color: red;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
