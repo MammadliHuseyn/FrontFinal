@@ -830,23 +830,24 @@ table td .btn-dark:hover {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.blogs button {
+.blogs .read-more {
+  font-size: 1.1em !important;
   border: none;
   background: none;
   outline: none;
 }
 
-.blogs button:focus {
+.blogs .read-more:focus {
   outline: none;
 }
 
-.blogs button:hover {
+.blogs .read-more:hover {
   color: red;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.blogs button:active {
+.blogs .read-more:active {
   outline: none;
 }
 
@@ -921,7 +922,7 @@ table td .btn-dark:hover {
 
 .tags a {
   font-family: Montserrat-Regular;
-  font-size: 13px;
+  font-size: 13px !important;
   color: #888;
   line-height: 1.5;
   padding: 5px 15px;
@@ -984,6 +985,12 @@ table td .btn-dark:hover {
   margin-left: 2.7%;
 }
 
+.navigation span {
+  color: #555;
+  font-size: .9em;
+  margin-left: 1em;
+}
+
 .navigation a {
   font-size: .9em;
   color: #555;
@@ -994,6 +1001,34 @@ table td .btn-dark:hover {
   text-decoration: none;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+.blog-detail tags {
+  font-size: 13px;
+}
+
+.fa-1x {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+
+.dark-blue-text {
+  color: #0A38F5;
+}
+
+.dark-pink-text {
+  color: #AC003A;
+}
+
+.dark-amber-text {
+  color: #ff6f00;
+}
+
+.dark-teal-text {
+  color: #004d40;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -1020,6 +1055,36 @@ table td .btn-dark:hover {
   .carousel .slide-items {
     font-size: 6px;
   }
+}
+
+.scrollTop {
+  display: none;
+  -webkit-transform: none;
+          transform: none;
+  width: 10%;
+  z-index: 999;
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+}
+
+.scrollTop button {
+  border-radius: .4em;
+  padding: 1em;
+  border: 1px solid #e2e2e2;
+  color: red;
+  background-color: #e2e2e2;
+}
+
+.scrollTop button:focus {
+  outline: none;
+}
+
+.scrollTop button:hover {
+  color: white;
+  background-color: red;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

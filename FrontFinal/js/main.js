@@ -105,14 +105,22 @@ $(document).ready(function () {
 $(window).scroll(function () {
     if ($(window).scrollTop() > 5) {
         $("#topheader").slideUp();
+        $("#scrollTop").fadeIn();
+
 
     }
     if ($(window).scrollTop() == 0 && $(window).width() >= 992) {
         $("#topheader").slideDown();
+        $("#scrollTop").fadeOut();
 
     }
 })
 
+$(document).ready(function(){
+    $("#scrollTop").click(function(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    })
+})
 
 $(".main-side img").hover(function () {
     $(this).next().toggleClass("animated fadeInUp d-block");
