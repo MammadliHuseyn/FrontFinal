@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
     $(".main-side .addTocart").click(function () {
+        $("#numOfitems").text(parseInt($("#numOfitems").text())+1)
         let itemPrice = $(this).next().next().text();
         let imgofproduct = $(this).prev().attr("src");
         let nameofproduct = $(this).next().text();
@@ -31,6 +32,7 @@ $(document).ready(function () {
         xBtn.classList = "btn ml-3 text-right"
         xBtn.style.border = "1px solid black"
         $(xBtn).click(function () {
+            $("#numOfitems").text(parseInt($("#numOfitems").text())-1)
             $(this).parent().remove();
            localStorage.clear();
         })
@@ -41,8 +43,9 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
-    $('.owl-carousel').on('click', '.item .addTocart', function () {
-        let itemPrice = $(this).next().next().text();
+    $('.owl-carousel').on('click', '.item .addTocart', function () {  
+       $("#numOfitems").text(parseInt($("#numOfitems").text())+1)
+        let itemPrice = $(this).next().next().next().text();
         let imgofproduct = $(this).prev().attr("src");
         let nameofproduct = $(this).next().text();
         localStorage.setItem("name_Of_Product", nameofproduct);
@@ -67,15 +70,17 @@ $(document).ready(function () {
         let xBtn = document.createElement('button');
         xBtn.innerText = "X";
         col.appendChild(xBtn);
-        xBtn.classList = "btn ml-3 text-right"
-        xBtn.style.border = "1px solid black"
+        xBtn.classList = "btn ml-3 text-right";
+        xBtn.style.border = "1px solid black";
+        $("#totalPrice").text(itemPrice);
         $(xBtn).click(function () {
+            $("#numOfitems").text(parseInt($("#numOfitems").text())-1)
             $(this).parent().remove();
            localStorage.clear();
+           $("#totalPrice").text(0);
         })
         swal(nameof, "is added to cart !", "success");
-        $("#price").text(itemprice);
-
+        $("#price").text(itemprice);    
     })
 })
 
@@ -175,4 +180,59 @@ $(document).ready(function () {
         console.log(total)
     })
 
+})
+
+$(document).ready(function(){
+    $("#remove-icon").click(function(){
+        $("#for-sale-header").toggleClass('d-none')
+    })
+})
+
+$(document).ready(function(){
+    $("#Best-seller").click(function(){
+        $(".best-seller-items").addClass('d-block');
+        $(".best-seller-items").removeClass("d-none");
+        $(".Featured-items").addClass('d-none');
+        $(".Featured-items").removeClass('d-block');
+        $(".Sale-items").removeClass("d-block");
+        $(".Top-Rate").removeClass("d-block");
+        $(".Top-Rate").addClass('d-none');
+    })
+    $("#Featured").click(function(){
+        $(".best-seller-items").addClass("d-none");
+        $(".best-seller-items").removeClass("d-block");
+        $(".Featured-items").addClass("d-block");
+        $(".Sale-items").addClass("d-none");
+        $(".Featured-items").removeClass("d-none");
+        $(".Sale-items").removeClass("d-block");
+        $(".Top-Rate").removeClass("d-block");
+
+    })
+    $("#Sale").click(function(){
+        $(".best-seller-items").addClass("d-none");
+        $(".Featured-items").addClass('d-none');
+        $(".Sale-items").removeClass("d-none");
+        $(".best-seller-items").removeClass("d-block");
+        $(".Featured-items").removeClass("d-block");
+        $(".Sale-items").addClass('d-block');
+        $(".Top-Rate").removeClass("d-block");
+    })
+    $("#Top-Rate").click(function(){
+        $(".best-seller-items").addClass("d-none");
+        $(".Featured-items").addClass('d-none');
+        $(".Sale-items").removeClass("d-none");
+        $(".best-seller-items").removeClass("d-block");
+        $(".Featured-items").removeClass("d-block");
+        $(".Sale-items").removeClass("d-block");
+        $(".Top-Rate").addClass('d-block');
+    })
+})
+
+$(document).ready(function(){
+    $("#play-video").click(function(){
+       $("iframe").toggleClass("d-block");
+       $("#scrollTop").click(function(){
+        $("iframe").addClass('d-none');
+       })
+    })
 })

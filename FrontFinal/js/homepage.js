@@ -2,9 +2,6 @@ $(document).ready(function () {
     sweetalert();
     $('.owl-carousel').owlCarousel({
 
-
-
-
         dots: false,
         loop: true,
         margin: 30,

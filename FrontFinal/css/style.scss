@@ -248,7 +248,7 @@ header{
             border-radius: 0;
             background: white;
             border: none;
-            box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
             color:black;
             
 
@@ -689,7 +689,10 @@ a{
 
 
 .main-side{
-    .col-lg-4{
+    .col-lg-4,.col-lg-3{
+        a{
+            color:#888;
+        }
         position: relative;
         img{
             width:100%;
@@ -929,6 +932,141 @@ a{
     .dark-teal-text {
     color: #004d40;
     }
+
+
+
+    .scrollTop{
+        .fa-angle-double-up{
+            color:white;
+            width:100%;
+        }
+        opacity:0.5;
+        display:none    ;
+        transform:none;
+        width:6%;
+        z-index:999;
+        position:fixed;
+        bottom:10%;
+        right:0%;
+        button{&:focus{
+            outline: none;
+        }
+            
+            border-radius:.2em;
+            padding:.8em;
+            border:none;
+            color:red;
+            background-color:#000;
+            &:hover{
+                color:white;
+                background-color:red;
+                transition: ease-in-out .5s;
+            }
+        }
+    }
+
+    
+.homepageV2{
+    .categories{
+        .btnwrap2{
+            bottom: 5%;
+            left: 36%;
+        }
+    }
+    .for-sale-header{
+        .fa-remove{
+            padding: .3em;
+        }
+        background-color: #e65540;
+        a{
+            color:white;
+        }
+    }
+.carousel{
+    img{
+        width:120%;
+    }
+    h5{
+        font-size:5em;
+    }
+}
+}
+
+.numOfitems{
+    left: 58%;
+    bottom: 33%;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding-right: .2em;
+    padding-left: 0.28em;
+    font-size: .8em;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    padding-bottom: 1.4em;
+}
+
+
+
+.main-side{
+
+    .item-classes{
+
+        margin-left:31.5%;
+        text-align: center;
+        li{
+            &:hover{
+                cursor: pointer;
+                color:black;
+                text-decoration: underline;
+            }
+            color:#888;
+        padding-right:3em;
+        display: inline;
+        text-align: center;
+        }
+
+    }
+    h1{
+    text-align: center;
+    font-size:2em;
+    font-weight: bold;
+    }
+
+}
+.beauty-lookbook{
+    iframe{
+        left:20%;
+        top:20%;
+    }
+    
+    h5{
+        font-size:2em;
+        letter-spacing:.2em;
+        
+    }
+    h1{
+        font-size:4em;
+        letter-spacing:.2em;
+    }
+    span{
+        font-size:1.2em;
+        color:#888;
+        &:hover{
+            color:white;
+        }
+    }
+    color:white;
+    background-image:url("../images/bg-video-01.jpg");
+    background-attachment: fixed;
+    width:100%;
+    padding:0;
+    padding-top:13em;
+    padding-bottom:13em;
+
+}
+
 //-------------------------------MEDIA QUERY-----------------------------------------------------
 
 /* Extra small devices (phones, 600px and down) */
@@ -982,32 +1120,15 @@ a{
          }
      }
 
+body .btn-dark{
+    padding-right:1em!important;
+    padding-left:1em!important;
 }
 
-.scrollTop{
-    display:none    ;
-    transform:none;
-    width:10%;
-    z-index:999;
-    position:fixed;
-    bottom:10%;
-    right:1%;
-    button{&:focus{
-        outline: none;
-    }
-        
-        border-radius:.4em;
-        padding:1em;
-        border:1px solid #e2e2e2;
-        color:red;
-        background-color:#e2e2e2;
-        &:hover{
-            color:white;
-            background-color:red;
-            transition: ease-in-out .5s;
-        }
-    }
+
 }
+
+
 
 
 
