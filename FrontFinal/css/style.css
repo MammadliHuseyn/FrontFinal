@@ -1147,7 +1147,7 @@ table td .btn-dark:hover {
 
 .beauty-lookbook iframe {
   left: 20%;
-  top: 20%;
+  top: 10%;
 }
 
 .beauty-lookbook h5 {
@@ -1167,6 +1167,76 @@ table td .btn-dark:hover {
 
 .beauty-lookbook span:hover {
   color: white;
+}
+
+.remove-video {
+  position: absolute;
+  display: none;
+  background: black;
+  border: none;
+  right: 50%;
+  z-index: 1000;
+  top: 15%;
+  opacity: .5;
+  border-radius: 38%;
+  padding: .5em;
+}
+
+.remove-video .fa {
+  color: white;
+  width: 100%;
+}
+
+.remove-video:hover {
+  background: red;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.remove-video:focus {
+  outline: none;
+}
+
+.item-detail .form-control {
+  text-align: center;
+  width: 20%;
+  display: inline-block;
+}
+
+.item-detail .btn-dark {
+  padding: 0;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 2px;
+}
+
+.item-detail .btn-dark:hover {
+  background-color: #343A40;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.item-detail img {
+  width: 100%;
+}
+
+.item-detail .left-little-img {
+  padding-top: 0;
+}
+
+.item-detail .left-little-img img {
+  width: 65.5%;
+  cursor: pointer;
+}
+
+.item-detail .left-little-img img:hover {
+  border: 1px solid #888;
+}
+
+.item-detail .left-little-img img:active {
+  border: 1px solid red;
 }
 
 /* Extra small devices (phones, 600px and down) */

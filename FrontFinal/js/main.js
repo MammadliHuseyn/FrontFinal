@@ -93,9 +93,6 @@ let sweetalert = (function () {
 })
 
 
-
-
-
 $(document).ready(function () {
     $("#view-cart").click(function () {
         window.location.replace("cart.html");
@@ -230,9 +227,33 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#play-video").click(function(){
-       $("iframe").toggleClass("d-block");
-       $("#scrollTop").click(function(){
-        $("iframe").addClass('d-none');
-       })
+       $("iframe").addClass("d-block");
+       $("#remove-video").toggleClass("d-block");
+
     })
+    $("#remove-video").click(function(){
+        $("iframe").addClass("d-none");
+        $("iframe").removeClass("d-block");
+        $("#remove-video").removeClass("d-block");
+    })
+
+    //product-detail page
+
+    $("#imgLittle1").click(function(){
+        
+       $("#imgBig").attr("src",$(this).attr("src"));
+
+    })
+    
+    $("#imgLittle2").click(function(){
+        
+        $("#imgBig").attr("src",$(this).attr("src"));
+ 
+     })
+     
+    $("#imgLittle3").click(function(){
+        
+        $("#imgBig").attr("src",$(this).attr("src"));
+ 
+     })
 })

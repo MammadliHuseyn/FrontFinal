@@ -1038,7 +1038,7 @@ a{
 .beauty-lookbook{
     iframe{
         left:20%;
-        top:20%;
+        top:10%;
     }
     
     h5{
@@ -1066,6 +1066,70 @@ a{
     padding-bottom:13em;
 
 }
+
+.remove-video{
+    position: absolute;
+    .fa{
+        color:white;
+        width:100%;
+    }
+    display:none;
+    background:black;
+    border:none;
+    right:50%;
+    z-index: 1000;
+    top: 15%;
+    opacity:.5;
+    border-radius:38%;
+    padding:.5em;
+    &:hover{
+        background:red;
+        transition:1s;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.item-detail{
+    .form-control{
+        text-align: center;
+        width:20%;
+        display: inline-block;
+    }
+    .btn-dark{
+        padding:0;
+        padding-top:.3em;
+        padding-bottom:.3em;
+        padding-right:1em;
+        padding-left:1em;
+        border-radius:2px;
+    }
+    .btn-dark:hover{
+        background-color:#343A40;
+        transition: none;
+    }
+
+    img{
+        width:100%;;
+    }
+    .left-little-img{
+        padding-top:0;
+        img{
+           width:65.5%;
+           cursor: pointer;
+           &:hover{
+               border:1px solid #888;
+           }
+           &:active{
+            border:1px solid red;
+        }
+           
+        }
+        
+    }
+}
+
 
 //-------------------------------MEDIA QUERY-----------------------------------------------------
 

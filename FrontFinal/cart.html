@@ -58,7 +58,7 @@
                             <li class="homepage"><a href="index.html">Home</a>
                                 <ul class=" home-extra ">
                                     <li><a href="index.html">Homepage V1 </a></li>
-                                    <li><a href="index.html">Homepage V2 </a></li>
+                                    <li><a href="homepageV2.html">Homepage V2 </a></li>
                                     <li><a href="index.html">Homepage V3 </a></li>
                                 </ul>
                             </li>
@@ -74,7 +74,10 @@
                 <div class="col-6 col-md-6 col-lg-2 col-sm-6">
                     <a><img src="images/icon-header-01.png" alt="" style="cursor: pointer;"></a>
                     <span class="line"></span>
-                    <a id="bucket-icon"><img src="images/icon-header-02.png" alt="" style="cursor: pointer;"></a>
+                    <div class="bucket-icon-div position-relative">
+                        <a id="bucket-icon"><img src="images/icon-header-02.png" alt="" style="cursor: pointer;"></a>
+                        <span class="numOfitems position-absolute" id="numOfitems">0</span>
+                    </div>
                     <!-- hamburger menu uchun -->
                     <span class="header-icons-noti"></span>
                 </div>
@@ -143,7 +146,7 @@
                         <td>Women Tshirt</td>
                         <td>$36.00</td>
                         <td><button class="btn btn-dark btn-decrease" id='btn-decrease1'>-</button>
-                            <input type="number" value="1" max="100" min="1" id="input1" class="form-control">
+                            <input type="number" value="1" max="100" min="1" id="input1" class="form-control w-25">
                             <button class="btn btn-dark btn-increase" id="btn-increase1">+</button>
                         </td>
                         <td id="total1">36.00</td>
